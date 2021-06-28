@@ -1,0 +1,68 @@
+/* Sections */
+
+/* Description sections */ 
+
+.descriptionSection-one {
+  background-color: #d8e8e3;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+}
+ .sb-text {
+   padding: 25%;
+   font-size: 19px;
+ }
+
+/* Banners */
+
+.bannerSection-one {
+  background-color: #d8e8e3;
+  height: 400px;
+  width: 100%;
+  margin: 2.8% 0;
+  display: flex;
+  flex-direction: row;
+  
+} 
+ .free-coffee {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   flex: 50% 50%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   line-height: 50px;
+ }
+ .starbux-img {
+   background: url("https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-71056.png") no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 50%;
+   height: 400px;
+ } 
+  .tap-coffee {
+    font-size: 23px;
+    font-weight: 600;
+  }
+  .join-now {
+    font-size: 18px;
+  }
+  .join-btn {
+    display: inline-block;
+    border: solid 1px #000;
+    border-radius: 50px;
+    padding: 7px 16px;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 600;
+    background-color: none;
+    transition: all .2s ease;
+  }
+   .join-btn:hover {
+    opacity: .7;
+    background-color: #bcbdbc;
+   }

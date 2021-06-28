@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bello's Coffee shop || Homepage</title>
+  <!-- FONT AWESOME CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./public/css/styled-components/index.css">
+  <link rel="stylesheet" href="./public/css/styled-components/header.css">
+  <link rel="stylesheet" href="./public/css/styled-components/sections.css">
+</head>
+<body>
+  <header>
+    <div class="main-container">
+      <nav class="sb-navContainer">
+        
+        <div class="left-nav">
+          <div class="logo">
+            <img src="data:image/png;base64,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" alt="StarBucks Logo">
+          </div>
+          <div class="nav-menu">
+            <ul>
+              <li>
+                <a href="#">menu</a>
+              </li>
+              <li>
+                <a href="#">rewards</a>
+              </li>
+              <li>
+                <a href="#">gift cards</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right-nav">
+          <div class="find-more">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="#">Find a store</a>
+          </div>
+          <div class="sb-apply">
+            <a href="#" class="sign-in">Sign in</a>
+            <a href="#" class="join">Join now</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Description Section -->
+  <main>
+    <div class="section-container">
+      <section class="descriptionSection-one">
+        <span class="sb-text">
+          Facial coverings are now optional in our stores for our fully vaccinated customers, following CDC guidance, except where local regulations require it by law. <a href="#">Learn more</a></span>
+        </span>
+      </section>
+
+      <section class="bannerSection-one">
+        <div class="free-coffee">
+          <div class="tap-coffee">FREE COFFEE IS A TAP AWAY</div>
+          <div class="join-now">Join now to start earning Rewards.*</div>
+          <a class="join-btn">Join now</a>
+        </div>
+        <div class="starbux-img">
+
+        </div>
+      </section>
+
+
+      <section class="bannerSection-two">
+        
+      </section>
+
+
+      <section class="bannerSection-three">
+        
+      </section>
+
+
+      <section class="bannerSection-four">
+        
+      </section>
+
+      <section class="descriptionSection-two">
+        
+      </section>
+    </div>
+  </main>
+</body>
+</html>

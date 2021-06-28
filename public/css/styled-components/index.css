@@ -1,0 +1,35 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Globals */
+
+:root {
+  --currentColor: #000;
+  --bgColor: #fff;
+  --menuColor: rgb(57 130 73);
+}
+
+body, html {
+  background-color: var(--bgColor);
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  /* background-color: blue; */
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+  color: var(--currentColor);
+}
