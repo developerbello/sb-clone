@@ -1,5 +1,11 @@
 /* Sections */
 
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
 /* Description sections */ 
 
 .descriptionSection-one {
@@ -18,7 +24,7 @@
 
 /* Banners */
 
-.bannerSection-one {
+.bannerSection {
   background-color: #d8e8e3;
   height: 400px;
   width: 100%;
@@ -37,12 +43,23 @@
    text-align: center;
    line-height: 50px;
  }
- .starbux-img {
-   background: url("https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-71056.png") no-repeat;
+ .starbux-img-one {
+  background: url("https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-71056.png") no-repeat;
+  height: 400px;
+ }
+ .starbux-img-two {
+   background: url("https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-72037.jpg") no-repeat;
+   height: 600px;
+ }
+ .starbux-img-three {
+   background: url("https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-72046.jpg") no-repeat;
+   height: 400px;
+ }
+ .starbux-banner { 
    background-size: cover;
    background-position: center;
    width: 50%;
-   height: 400px;
+   /* height: 400px; */
  } 
   .tap-coffee {
     font-size: 23px;
@@ -66,3 +83,104 @@
     opacity: .7;
     background-color: #bcbdbc;
    }
+
+   .sb-bigText {
+     text-transform: uppercase;
+     font-size: 60px;
+     font-weight: 600;
+     line-height: 1.2;
+     padding: 0 200px;
+   }
+   .free-coffee p {
+     font-size: 28px;
+     padding: 0 30px;
+   }
+
+.bannerSection-two {
+  height: 700px;
+  align-items: center;
+  text-align: center;
+} 
+ .banner-flex {
+   display: flex;
+   justify-content: space-between;
+ }
+ .order-and-pickup {
+   background-color: #d4e9e2;
+   padding-right: 15px;
+ }
+ .floating-into-summer {
+   background-color: #d4e9e2;
+   padding: 20px 0;
+   padding-left: 15px;
+ }
+  .order-and-pickup p, .floating-into-summer p {
+    font-size: 28px;
+  }
+  .order-and-pickup h3, .floating-into-summer h3 {
+    font-weight: 300;
+    padding: 0 40px;
+  }
+  .uberEat-img, .App-img {
+    height: 500px;
+  }
+
+  .celebrate-month {
+    margin: 5% 0 0;
+  }
+   .celebrate-month .free-coffee {
+     line-height: 30px;
+   }
+   .pride-month {
+    font-size: 40px;
+    line-height: 50px;
+   }
+   .lgbtq-text {
+     padding: 0 150px;
+     font-size: 15px;
+   }
+   .shift-btn {
+     margin-top: 40px;
+   }
+
+   .descriptionSection-two {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     text-align: center;
+     height: 200px;
+     font-size: 13px;
+     box-shadow: 1px 8px 5px 0px rgba(207,207,207,0.75);
+    -webkit-box-shadow: 1px 8px 5px 0px rgba(207,207,207,0.75);
+    -moz-box-shadow: 1px 8px 5px 0px rgba(207,207,207,0.75);
+   }
+
+   .other-text {
+     padding: 0 400px;
+     line-height: 25px;
+   }
+
+.services-lists {
+  height: 300px;
+  width: 100%;
+  padding: 30px 300px 0 0;
+  /* align-items: center; */
+  text-align: left;
+}
+ .services th {
+   text-transform: capitalize;
+   padding: 0 50px;
+   padding-bottom: 30px;
+ }
+ .services td {
+   padding: 0 50px;
+ }
+ .services td a {
+   color: #999999;
+   font-size: 14px;
+   text-align: center;
+ }
+  .services td a:hover {
+    color: #000;
+  }
