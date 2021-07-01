@@ -1,6 +1,7 @@
 /* Sections */
 
 html, body {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -97,8 +98,10 @@ html, body {
    }
 
 .bannerSection-two {
+  width: 100%;
+  box-sizing: border-box;
   height: 700px;
-  align-items: center;
+  line-height: normal;
   text-align: center;
 } 
  .banner-flex {
@@ -106,10 +109,14 @@ html, body {
    justify-content: space-between;
  }
  .order-and-pickup {
+   box-sizing: border-box;
+   margin-right: 10px;
    background-color: #d4e9e2;
+   background-size: cover;
    padding-right: 15px;
  }
  .floating-into-summer {
+   margin-left: 10px;
    background-color: #d4e9e2;
    padding: 20px 0;
    padding-left: 15px;

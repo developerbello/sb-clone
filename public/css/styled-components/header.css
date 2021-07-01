@@ -1,12 +1,14 @@
 /* Header */
 
 html, body {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
 .main-container {
+  z-index: 10;
   margin: 0 auto;
   padding: 12px 50px;
   height: 51px;
@@ -88,7 +90,7 @@ html, body {
  }
  .sign-in:hover {
   opacity: .7;
-  background-color: #d8e8e3;
+  background-color: rgba(0, 0, 0, .6);
  }
 
  .join {
@@ -106,5 +108,6 @@ html, body {
  }
  .join:hover {
   opacity: .7;
+  background-color: rgba(0, 0, 0, .7);
  }
 
