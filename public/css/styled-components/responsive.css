@@ -1,0 +1,45 @@
+@media screen and (max-width: 789px) {
+  .main-container {
+    height: 85px;  
+  }
+  
+  .logo img {
+    width: 41px;
+    height: 41px;
+  }
+  
+  .clear {
+    visibility: hidden;   
+  }
+  
+  .right-nav {
+    justify-content: space-between;
+  }
+
+  .sb-menu-box {
+    visibility: visible;
+  }
+  .sb-menu-box i {
+    font-size: 25px;
+    color: #bebebe;
+    padding: 5px;
+  }
+  .sb-menu-box i:hover {
+    background-color: #9999993f;
+    border-radius: 20px;
+  }
+
+   /* Sections */
+  /* Description sections */
+
+  .sb-text {
+    margin: 10%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .clear {
+    /* visibility: visible; */
+  }
+}

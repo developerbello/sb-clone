@@ -1,12 +1,6 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-html, body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* Globals */
 
@@ -16,11 +10,13 @@ html, body {
   --menuColor: rgb(57 130 73);
 }
 
-body, html {
-  width: 100%;
-  background-color: var(--bgColor);
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+}
+
+body, html {
+  background-color: var(--bgColor);
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 400;
 }
@@ -30,14 +26,373 @@ img {
 }
 
 header {
-  /* background-color: blue; */
-  max-width: 1440px;
-  width: 100%;
-  position: relative;
-  z-index: 2;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 1px 8px 5px 0px rgba(207,207,207,0.75);
+  -webkit-box-shadow: 1px 8px 5px 0px rgba(207,207,207,0.75);
+  -moz-box-shadow: 1px 8px 5px 0px rgba(207,207,207,0.75);
 }
 
 a {
   text-decoration: none;
   color: var(--currentColor);
 }
+
+.main-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  height: 75px;  
+}
+
+.sb-navContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  margin: 5px 8px;
+}
+
+.left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 51px;
+  height: 51px;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .nav-menu li:not(:first-child) {
+    padding-left: 12px;
+  }
+
+ .nav-menu li {
+   text-transform: uppercase;
+   font-size: .85em;
+   font-weight: 600;
+   letter-spacing: 2px;
+ }
+ .nav-menu a {
+  color: var(--currentColor);
+  transition: all .2s ease;
+ }
+ .nav-menu a:hover,
+ .nav-menu a:active {
+   color: rgb(57 130 71);
+ }
+
+.right-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .sb-apply {
+   margin-left: 35px;
+ }
+
+ .sb-menu-box {
+   visibility: hidden;
+ }
+ /* .sb-apply:hover {
+   color: rgb(57 130 73);
+ } */
+
+ .find-store:hover {
+   color: rgb(57 130 73);
+ }
+ .find-store i{
+  font-size: 20px;
+  margin-right: 4px;
+ }
+ .find-store a {
+   font-size: 14px;
+   font-weight: 600;
+ }
+
+ .sign-in {
+  display: inline-block;
+  border: solid 1px var(--currentColor);
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: all .2s ease;
+ }
+ .sign-in:hover {
+  opacity: .7;
+  background-color: rgba(207, 207, 207, 0.6);
+  color: var(--currentColor);
+ }
+
+ .join {
+  margin-left: 10px;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: var(--currentColor);
+  color: var(--bgColor);
+  padding: 7px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: all .2s ease;
+ }
+ .join:hover {
+  opacity: .7;
+  background-color: rgba(0, 0, 0, .7);
+ }
+
+/* Sections */
+/* Description sections */ 
+
+.descriptionSection-one {
+  background-color: #d8e8e3;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  overflow: hidden;
+}
+ .sb-text {
+   margin: 25%;
+   font-size: 19px;
+ }
+
+/* Banners */
+
+.bannerSection {
+  background-color: #d8e8e3;
+  height: 400px;
+  width: 100%;
+  margin: 25px 0;
+  display: flex;
+} 
+ .free-coffee {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   flex: 50% 50%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   line-height: 50px;
+ }
+ .starbux-img-one {
+   background-repeat: no-repeat;
+  /* background: url("https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-71056.png") no-repeat; */
+  height: 400px;
+ }
+ .starbux-img-two {
+   background-repeat: no-repeat;
+   /* background: url("https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-72037.jpg") no-repeat; */
+   height: 600px;
+ }
+ .starbux-img-three {
+   background-repeat: no-repeat;
+   /* background: url("https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-72046.jpg") no-repeat; */
+   height: 400px;
+ }
+ .starbux-banner { 
+   background-size: cover;
+   background-position: center;
+   width: 50%;
+   /* height: 400px; */
+ } 
+  .tap-coffee {
+    font-size: 23px;
+    font-weight: 600;
+  }
+  .join-now {
+    font-size: 18px;
+  }
+  .join-btn {
+    display: inline-block;
+    border: solid 1px #000;
+    border-radius: 50px;
+    padding: 7px 16px;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 600;
+    background-color: none;
+    transition: all .2s ease;
+  }
+   .join-btn:hover {
+    opacity: .7;
+    background-color: #bcbdbc;
+   }
+
+   .sb-bigText {
+     text-transform: uppercase;
+     font-size: 60px;
+     font-weight: 600;
+     line-height: 1.2;
+     padding: 0 200px;
+   }
+   .free-coffee p {
+     font-size: 28px;
+     padding: 0 30px;
+   }
+
+.bannerSection-two {
+  box-sizing: border-box;
+  width: 100%;
+} 
+ .banner-flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .order-and-pickup {
+   margin-right: 10px;
+   background-color: #d4e9e2;
+ }
+ .floating-into-summer {
+   margin-left: 10px;
+   background-color: #d4e9e2;
+ }
+  .order-and-pickup p, .floating-into-summer p {
+    font-size: 28px;
+  }
+  .order-and-pickup h3, .floating-into-summer h3 {
+    font-weight: 300;
+    padding: 0 40px;
+  }
+  .uberEat-img, .App-img {
+    height: 500px;
+  }
+  .fis-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+.celebrate-month {
+  box-sizing: border-box;
+  margin: 5% 0 0;
+}
+   .celebrate-month .free-coffee {
+     line-height: 30px;
+   }
+   .pride-month {
+    font-size: 40px;
+    line-height: 50px;
+   }
+   .lgbtq-text {
+     padding: 0 150px;
+     font-size: 15px;
+   }
+   .shift-btn {
+     margin-top: 40px;
+   }
+
+.descriptionSection-two {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  font-size: 13px;
+  box-shadow: 1px 8px 5px 0px rgba(207,207,207,0.75);
+  -webkit-box-shadow: 1px 8px 5px 0px rgba(207,207,207,0.75);
+  -moz-box-shadow: 1px 8px 5px 0px rgba(207,207,207,0.75);
+}
+
+ .other-text {
+   padding: 0 400px;
+   line-height: 25px;
+  }
+
+.service-list {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+ .services {
+   height: 300px;
+   display: flex;
+   margin: 50px;
+   flex: 50%;
+ }
+ .sb-table {
+   margin-right: 40px ;
+ }
+.sb-listHeader {
+  margin-bottom: 40px;
+  font-weight: 600;
+  box-sizing: content-box;
+}
+.sb-table a {
+  display: flex;
+  flex-direction: column;
+  line-height: 44px;
+  font-size: 15px;
+}
+
+/* Footer */
+
+.footer-container {
+  margin: 0 20px;
+  border-top: solid 2px #e5e5e5;
+  padding: 40px 10px;
+}
+
+.sb-social i{
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin: 0 3px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+ .sb-social i:hover {
+  border-radius: 100px;
+  background-color: #e5e5e5;
+ }
+
+.footer-menu ul{
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+}
+ .footer-menu li {
+   padding-right: 20px;
+ }
+ .footer-menu a {
+   text-decoration: none;
+   font-size: 15px;
+   color: #000;
+ } 
+ .footer-menu a:hover {
+   text-decoration: underline;
+ }
+ .lines {
+   color: #999999;
+   font-size: 15px;
+    font-weight: 600;
+ }
+
+.copyright {
+  margin: 20px 0 9px;
+}
+ .copyright p {
+   font-size: 15px;
+   color: #ccc;
+ }
